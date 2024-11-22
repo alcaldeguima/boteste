@@ -1,2 +1,3 @@
-2024/11/22-16:44:13.033 44c35 Creating DB /home/jpadmin/Documents/lixo/.wwebjs_auth/session/Default/Session Storage since it was missing.
-2024/11/22-16:44:13.044 44c35 Reusing MANIFEST /home/jpadmin/Documents/lixo/.wwebjs_auth/session/Default/Session Storage/MANIFEST-000001
+2024/11/22-17:18:19.319 468a9 Reusing MANIFEST /home/jpadmin/Documents/lixo/.wwebjs_auth/session/Default/Session Storage/MANIFEST-000001
+2024/11/22-17:18:19.319 468a9 Recovering log #3
+2024/11/22-17:18:19.319 468a9 Reusing old log /home/jpadmin/Documents/lixo/.wwebjs_auth/session/Default/Session Storage/000003.log 

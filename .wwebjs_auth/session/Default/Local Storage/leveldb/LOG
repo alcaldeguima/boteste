@@ -1,2 +1,3 @@
-2024/11/22-16:44:11.112 44c35 Creating DB /home/jpadmin/Documents/lixo/.wwebjs_auth/session/Default/Local Storage/leveldb since it was missing.
-2024/11/22-16:44:11.123 44c35 Reusing MANIFEST /home/jpadmin/Documents/lixo/.wwebjs_auth/session/Default/Local Storage/leveldb/MANIFEST-000001
+2024/11/22-17:18:17.455 468b0 Reusing MANIFEST /home/jpadmin/Documents/lixo/.wwebjs_auth/session/Default/Local Storage/leveldb/MANIFEST-000001
+2024/11/22-17:18:17.456 468b0 Recovering log #3
+2024/11/22-17:18:17.456 468b0 Reusing old log /home/jpadmin/Documents/lixo/.wwebjs_auth/session/Default/Local Storage/leveldb/000003.log 
