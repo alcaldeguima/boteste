@@ -10,9 +10,19 @@ const client = new Client({
 });
 
 client.on('qr', (qr) => {
-    // Gera o QR Code para autenticação no WhatsApp
-    qrcode.generate(qr, { small: true });
+    // Gera o QR Code como uma URL
+    qrcode.toDataURL(qr, (err, url) => {
+        if (err) {
+            console.error('Erro ao gerar QR Code:', err);
+        } else {
+            console.log('QR Code gerado. Acesse: ', url); // URL do QR code gerado
+            // Envie essa URL para o seu grupo ou usuário
+            const groupId = '120363296494777959@g.us'; // Substitua pelo ID real do grupo
+            client.sendMessage(groupId, `Escaneie o QR Code para autenticação: ${url}`);
+        }
+    });
 });
+
 
 client.on('ready', () => {
     console.log('O bot está pronto!');
