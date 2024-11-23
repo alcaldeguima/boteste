@@ -23,13 +23,13 @@ client.on('message', message => {
     }
 });
     /*Variaveis das funções*/
-    //let d = 0;  contador davi
-    //let a = 0;  contador alex
+    let d = 0;  //contador davi
+    let a = 0;  //contador alex
     let t = 0;  //contador teteu
 
 client.on('message', message => {
     
-    /*
+    
     if (message.body.toLowerCase() === '!davi') {
         d++;
         davi(message, d);
@@ -38,7 +38,7 @@ client.on('message', message => {
         a++;
         alex(message, a);
     }
-        */
+        
     if (message.body.toLowerCase() === '!d20') {
         const resultado = rolarD20();
         message.reply(`**${resultado}**!`);
@@ -71,8 +71,15 @@ client.on('message', message => {
             trends(message, t);
         }
 
+        if (message.body.toLowerCase() === '!teteu'){
+            shebly(message);
+        }
+
+
         });
-/*
+
+
+
         function alex(message, a){
             const r1 = `O Alex ja deu o cu ${a} vezes!`;
             if (message) {
@@ -83,6 +90,16 @@ client.on('message', message => {
                 client.sendMessage(groupId, r1);
             }
 
+        }
+        const pkb = ["Você não negocia quando está na pior.","Eu não pago por ternos. Meus ternos estão por conta da casa ou a casa pega fogo", "A convicção leva à emoção, que é inimiga da oratória","Bom gosto é para pessoas que não podem pagar por safiras", "Eu aprendi há muito tempo a odiar meus inimigos, mas nunca aprendi a amar um","Eu vou continuar vivendo até encontrar um homem que me vença","Eu penso para que você não precise pensar","Eu sou apenas um excelente exemplo do que um homem trabalhador pode conquistar",]
+        function shebly(message){
+            if (message) {
+                let y = Math.floor(Math.random() * 6) + 1;
+                message.reply(pkb[y]);
+            } else {
+                const groupId = '120363296494777959@g.us'; 
+                client.sendMessage(groupId, pkb[y]);
+            }
         }
         
         function davi(message, d){
@@ -95,7 +112,7 @@ client.on('message', message => {
                 client.sendMessage(groupId, r2);
             }
         }
-*/
+
         function trends(message, t){
             const r3 = `O Teteu já fez ${t} trends! 🕺`;
             if (message) {
